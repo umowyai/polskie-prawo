@@ -21,5 +21,6 @@
   "icon": ".claude-plugin/icon.png",
   "privacyPolicyUrl": "https://app.umowy.ai/legal/polityka-prywatnosci.pdf",
   "termsOfServiceUrl": "https://app.umowy.ai/legal/regulamin.pdf",
-  "supportUrl": "https://umowy.ai/en/mcp/#support"
+  "supportUrl": "https://umowy.ai/en/mcp/#support",
+  "documentationUrl": "https://umowy.ai/en/mcp/"
 }
