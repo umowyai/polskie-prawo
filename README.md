@@ -2,8 +2,8 @@
 
 [English below](#english)
 
-Baza polskiego prawa z Dziennika Ustaw jako narzędzia dla Twojego AI: ponad 600 ustaw
-i rozporządzeń w pełnym brzmieniu, status obowiązywania sprawdzany codziennie w rejestrze ELI,
+Baza polskiego prawa z Dziennika Ustaw jako narzędzia dla Twojego AI: kodeksy, ustawy
+i rozporządzenia w pełnym brzmieniu, status obowiązywania sprawdzany codziennie w rejestrze ELI,
 brzmienie przepisu na wskazany dzień, załączniki i tabele. Serwer MCP: `https://mcp.umowy.ai/mcp`.
 Strona z instrukcjami dla wszystkich aplikacji: **https://umowy.ai/mcp/**
 
@@ -68,7 +68,7 @@ odrębną, własnościową usługą Vorna sp. z o.o. objętą regulaminem.
 
 ## English
 
-Polish law from the Journal of Laws (Dziennik Ustaw) as tools for your AI: 600+ statutes and
+Polish law from the Journal of Laws (Dziennik Ustaw) as tools for your AI: codes, statutes and
 regulations in full text, in-force status checked daily against the official ELI register,
 wording of a provision as of any date, annexes and tables. MCP server: `https://mcp.umowy.ai/mcp`.
 Setup for every app: **https://umowy.ai/en/mcp/**
