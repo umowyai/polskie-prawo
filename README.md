@@ -11,7 +11,7 @@ Strona z instrukcjami dla wszystkich aplikacji: **https://umowy.ai/mcp/**
 
 **Claude Code** (plugin z tego repozytorium, ze skillami):
 ```
-/plugin marketplace add umowy-ai/polskie-prawo
+/plugin marketplace add umowyai/polskie-prawo
 /plugin install polskie-prawo@umowy-ai
 ```
 potem `/mcp` → `polskie-prawo` → logowanie e-mailem. Sam serwer bez skilli:
@@ -73,7 +73,7 @@ regulations in full text, in-force status checked daily against the official ELI
 wording of a provision as of any date, annexes and tables. MCP server: `https://mcp.umowy.ai/mcp`.
 Setup for every app: **https://umowy.ai/en/mcp/**
 
-**Claude Code**: `/plugin marketplace add umowy-ai/polskie-prawo`, then
+**Claude Code**: `/plugin marketplace add umowyai/polskie-prawo`, then
 `/plugin install polskie-prawo@umowy-ai`, then `/mcp` → sign in with e-mail.
 **claude.ai / Claude Desktop**: one click — see the link above.
 **ChatGPT** (Business, Enterprise, Edu, Pro): Plugins → + → Add custom MCP server →

@@ -8,7 +8,7 @@
     "url": "https://umowy.ai/mcp/"
   },
   "homepage": "https://umowy.ai/mcp/",
-  "repository": "https://github.com/umowy-ai/polskie-prawo",
+  "repository": "https://github.com/umowyai/polskie-prawo",
   "license": "MIT",
   "keywords": ["polish-law", "prawo", "dziennik-ustaw", "kodeks-cywilny", "legal", "mcp"]
 }

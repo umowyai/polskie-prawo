@@ -3,16 +3,25 @@
   "name": "ai.umowy/polskie-prawo",
   "title": "Polskie Prawo (Dziennik Ustaw) by Umowy.AI",
   "description": "Polish law from Dziennik Ustaw: full text of statutes, daily in-force status, wording by date.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://umowy.ai/mcp/",
   "repository": {
-    "url": "https://github.com/umowy-ai/polskie-prawo",
+    "url": "https://github.com/umowyai/polskie-prawo",
     "source": "github"
   },
   "icons": [
-    { "src": "https://umowy.ai/assets/mcp-icon-512.png", "mimeType": "image/png", "sizes": ["512x512"] }
+    {
+      "src": "https://umowy.ai/assets/mcp-icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
   ],
   "remotes": [
-    { "type": "streamable-http", "url": "https://mcp.umowy.ai/mcp" }
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.umowy.ai/mcp"
+    }
   ]
 }
