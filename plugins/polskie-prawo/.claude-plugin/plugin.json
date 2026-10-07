@@ -10,5 +10,16 @@
   "homepage": "https://umowy.ai/mcp/",
   "repository": "https://github.com/umowyai/polskie-prawo",
   "license": "MIT",
-  "keywords": ["polish-law", "prawo", "dziennik-ustaw", "kodeks-cywilny", "legal", "mcp"]
+  "keywords": [
+    "polish-law",
+    "prawo",
+    "dziennik-ustaw",
+    "kodeks-cywilny",
+    "legal",
+    "mcp"
+  ],
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://app.umowy.ai/legal/polityka-prywatnosci.pdf",
+  "termsOfServiceUrl": "https://app.umowy.ai/legal/regulamin.pdf",
+  "supportUrl": "https://umowy.ai/en/mcp/#support"
 }
