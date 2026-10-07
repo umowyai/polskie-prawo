@@ -1,0 +1,14 @@
+{
+  "name": "polskie-prawo",
+  "version": "1.0.0",
+  "description": "Polish law database (Dziennik Ustaw) for Claude: full text of codes, statutes and regulations, daily in-force status, wording as of any date. Skills teach Claude to quote provisions from the source instead of memory. Polska baza prawna z Dziennika Ustaw dla Claude.",
+  "author": {
+    "name": "Umowy.AI (Vorna sp. z o.o.)",
+    "email": "serwis@umowy.ai",
+    "url": "https://umowy.ai/mcp/"
+  },
+  "homepage": "https://umowy.ai/mcp/",
+  "repository": "https://github.com/umowy-ai/polskie-prawo",
+  "license": "MIT",
+  "keywords": ["polish-law", "prawo", "dziennik-ustaw", "kodeks-cywilny", "legal", "mcp"]
+}

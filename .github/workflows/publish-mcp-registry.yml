@@ -1,0 +1,23 @@
+name: Publish to MCP Registry
+# Publikuje server.json do registry.modelcontextprotocol.io przy tagu v*.
+# Namespace ai.umowy/* jest uwierzytelniany kluczem Ed25519 z rekordu DNS TXT na umowy.ai
+# (v=MCPv1; k=ed25519; p=…). Klucz prywatny (hex seed) leży w sekrecie repo MCP_PRIVATE_KEY.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mcp-publisher
+        run: |
+          curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/').tar.gz" | tar xz mcp-publisher
+          chmod +x mcp-publisher
+      - name: Validate server.json
+        run: ./mcp-publisher validate
+      - name: Login (DNS, umowy.ai)
+        run: ./mcp-publisher login dns --domain umowy.ai --private-key "${{ secrets.MCP_PRIVATE_KEY }}"
+      - name: Publish
+        run: ./mcp-publisher publish

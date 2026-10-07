@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "umowy-ai",
+  "description": "Umowy.AI plugins: Polish law from the Journal of Laws (Dziennik Ustaw) for Claude.",
+  "owner": {
+    "name": "Umowy.AI (Vorna sp. z o.o.)",
+    "email": "serwis@umowy.ai"
+  },
+  "plugins": [
+    {
+      "name": "polskie-prawo",
+      "description": "Polish law database (Dziennik Ustaw) as MCP tools plus skills that teach Claude to quote provisions from the source, check in-force status and read a provision as of a given date. Polska baza prawna z Dziennika Ustaw: narzędzia MCP i skille do cytowania przepisów ze źródła.",
+      "author": { "name": "Umowy.AI", "email": "serwis@umowy.ai" },
+      "category": "productivity",
+      "source": "./plugins/polskie-prawo",
+      "homepage": "https://umowy.ai/mcp/",
+      "keywords": ["polish-law", "prawo", "dziennik-ustaw", "legal", "mcp", "umowy-ai"]
+    }
+  ]
+}

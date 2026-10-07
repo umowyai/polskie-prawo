@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "polskie-prawo": {
+      "type": "http",
+      "url": "https://mcp.umowy.ai/mcp"
+    }
+  }
+}
