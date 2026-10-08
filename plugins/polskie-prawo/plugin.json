@@ -1,0 +1,63 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "polskie-prawo",
+  "version": "1.0.1",
+  "description": "Polish law database (Dziennik Ustaw) for AI assistants: full text of codes, statutes and regulations, daily in-force status, wording as of any date. Skills teach the assistant to quote provisions from the source instead of memory. Polska baza prawna z Dziennika Ustaw dla asystentów AI.",
+  "author": {
+    "name": "Umowy.AI (Vorna sp. z o.o.)",
+    "email": "serwis@umowy.ai",
+    "url": "https://umowy.ai/mcp/"
+  },
+  "homepage": "https://umowy.ai/mcp/",
+  "repository": "https://github.com/umowyai/polskie-prawo",
+  "license": "MIT",
+  "keywords": [
+    "polish-law",
+    "prawo",
+    "dziennik-ustaw",
+    "kodeks-cywilny",
+    "legal",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Polskie Prawo",
+        "shortDescription": "Polish law from the source",
+        "longDescription": "Polskie Prawo (Dziennik Ustaw) is a legal research tool: it gives your AI assistant the official text of Polish law instead of memory. It is a read-only connection to the Umowy.AI legal database: codes, statutes and regulations from the Polish Journal of Laws (Dziennik Ustaw) in full text, in-force status checked daily against the official ELI register of the Polish Sejm, the wording of a provision as of any date, and annexes such as rate tables and forms.\n\nWhat it does: searches provisions by topic, fetches an article or paragraph (optionally as in force on a given date), checks whether an act is in force and which amendments followed the publication, finds related provisions, reads annexes, and lists the acts available in the database. Every answer carries the Journal of Laws reference (year, item) so it can be verified at the source. When an act is not in the database, the tool says so instead of substituting another act. Three skills teach the assistant to quote provisions from the source, check the legal state as of a date and analyse a contract clause.\n\nWho it is for: lawyers, accountants, HR and compliance teams, entrepreneurs, students and anyone working with Polish contracts and regulations. The database provides sources, not legal advice.\n\nAccess: sign in with your e-mail. If you already have an Umowy.AI account, sign in with the same e-mail address.\n\n---\nPolskie Prawo (Dziennik Ustaw) to narzędzie do pracy ze źródłami prawa: daje Twojemu asystentowi AI oficjalną treść polskiego prawa zamiast pamięci modelu. Kodeksy, ustawy i rozporządzenia w pełnym brzmieniu, status obowiązywania sprawdzany codziennie w rejestrze ELI, brzmienie przepisu na wskazany dzień, załączniki. Każda odpowiedź ma numer Dz.U. Baza dostarcza źródła, nie porady prawne. Logowanie e-mailem; jeśli masz już konto Umowy.AI, zaloguj się tym samym adresem.",
+        "developerName": "Umowy.AI (Vorna sp. z o.o.)",
+        "category": "Education & Research",
+        "capabilities": [
+          "Search Polish legal provisions",
+          "Read the text of an article",
+          "Check in-force status",
+          "Read annexes"
+        ],
+        "websiteURL": "https://umowy.ai/en/mcp/",
+        "supportURL": "https://umowy.ai/en/mcp/#support",
+        "privacyPolicyURL": "https://umowy.ai/polityka-prywatnosci/",
+        "termsOfServiceURL": "https://umowy.ai/regulamin/",
+        "defaultPrompt": [
+          "Podaj treść art. 556⁴ Kodeksu cywilnego i sprawdź, czy obowiązuje.",
+          "Jakie terminy przedawnienia dotyczą roszczeń z umowy o dzieło? Zacytuj przepisy z bazy.",
+          "Przeanalizuj tę klauzulę o karze umownej pod kątem Kodeksu cywilnego: [wklej klauzulę]"
+        ],
+        "brandColor": "#0A0A0A",
+        "brandColorDark": "#22D3EE",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      },
+      "publication": {
+        "countries": [
+          "PL"
+        ],
+        "translations": {
+          "pl-PL": {
+            "subtitle": "Polskie przepisy ze źródła",
+            "description": "Polskie Prawo (Dziennik Ustaw) to narzędzie do pracy ze źródłami prawa: daje Twojemu asystentowi AI oficjalną treść polskiego prawa zamiast pamięci modelu. Kodeksy, ustawy i rozporządzenia w pełnym brzmieniu, status obowiązywania sprawdzany codziennie w rejestrze ELI, brzmienie przepisu na wskazany dzień, załączniki. Każda odpowiedź ma numer Dz.U. Baza dostarcza źródła, nie porady prawne."
+          }
+        }
+      }
+    }
+  }
+}

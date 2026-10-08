@@ -1,0 +1,20 @@
+{
+  "name": "umowy-ai",
+  "interface": {
+    "displayName": "Umowy.AI — Polskie Prawo"
+  },
+  "plugins": [
+    {
+      "name": "polskie-prawo",
+      "source": {
+        "source": "local",
+        "path": "./plugins/polskie-prawo"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "polskie-prawo",
-  "version": "1.0.0",
-  "description": "Polish law database (Dziennik Ustaw) for Claude: full text of codes, statutes and regulations, daily in-force status, wording as of any date. Skills teach Claude to quote provisions from the source instead of memory. Polska baza prawna z Dziennika Ustaw dla Claude.",
+  "version": "1.0.1",
+  "description": "Polish law database (Dziennik Ustaw) for AI assistants: full text of codes, statutes and regulations, daily in-force status, wording as of any date. Skills teach the assistant to quote provisions from the source instead of memory. Polska baza prawna z Dziennika Ustaw dla asystentów AI.",
   "author": {
     "name": "Umowy.AI (Vorna sp. z o.o.)",
     "email": "serwis@umowy.ai",

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "polskie-prawo": {
+      "type": "streamable-http",
+      "url": "https://mcp.umowy.ai/mcp"
+    }
+  }
+}

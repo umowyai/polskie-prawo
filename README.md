@@ -22,8 +22,9 @@ claude mcp add --transport http polskie-prawo https://mcp.umowy.ai/mcp --scope u
 **claude.ai / Claude Desktop** — jedno kliknięcie:
 https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Polskie%20Prawo%20(Dziennik%20Ustaw)&connectorUrl=https%3A%2F%2Fmcp.umowy.ai%2Fmcp
 
-**ChatGPT** (Business, Enterprise, Edu, Pro): Plugins → + → Add custom MCP server → adres
-`https://mcp.umowy.ai/mcp`, OAuth.
+**ChatGPT** (aplikacja desktop, Business, Enterprise, Edu, Pro): dodaj marketplace z tego repozytorium
+(`umowyai/polskie-prawo` — format Agent Plugins: `.agents/plugins/marketplace.json`, `plugins/polskie-prawo/plugin.json`)
+albo Plugins → + → Add custom MCP server → adres `https://mcp.umowy.ai/mcp`, OAuth.
 
 **Cursor, VS Code, Codex, Kimi i inne klienty MCP**: konfiguracja z `plugins/polskie-prawo/.mcp.json`
 albo instrukcje na https://umowy.ai/mcp/.
@@ -36,7 +37,8 @@ albo instrukcje na https://umowy.ai/mcp/.
 | `plugins/polskie-prawo/skills/przepis` | jak cytować przepis ze źródła, nie z pamięci |
 | `plugins/polskie-prawo/skills/stan-prawny-na-dzien` | brzmienie na dzień i porównanie wersji |
 | `plugins/polskie-prawo/skills/klauzula` | analiza klauzuli umownej z przepisami z bazy |
-| `.claude-plugin/marketplace.json` | własny marketplace `umowy-ai` dla Claude Code |
+| `.claude-plugin/marketplace.json` | marketplace `umowy-ai` dla Claude Code |
+| `.agents/plugins/marketplace.json`, `plugins/polskie-prawo/plugin.json`, `mcp.json`, `assets/` | ten sam plugin w formacie Agent Plugins (ChatGPT desktop, Codex) |
 | `server.json` | wpis w oficjalnym MCP Registry (`ai.umowy/polskie-prawo`) |
 
 ## Narzędzia serwera
@@ -76,7 +78,8 @@ Setup for every app: **https://umowy.ai/en/mcp/**
 **Claude Code**: `/plugin marketplace add umowyai/polskie-prawo`, then
 `/plugin install polskie-prawo@umowy-ai`, then `/mcp` → sign in with e-mail.
 **claude.ai / Claude Desktop**: one click — see the link above.
-**ChatGPT** (Business, Enterprise, Edu, Pro): Plugins → + → Add custom MCP server →
+**ChatGPT** (desktop app; Business, Enterprise, Edu, Pro): add the marketplace from this repository
+(`umowyai/polskie-prawo`, Agent Plugins format) or Plugins → + → Add custom MCP server →
 `https://mcp.umowy.ai/mcp`, OAuth.
 
 Tools: `search_legal_provisions`, `get_article`, `get_related_provisions`,
